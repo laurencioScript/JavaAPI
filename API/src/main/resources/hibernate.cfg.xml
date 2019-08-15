@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+  <property name="hibernate.connection.url">jdbc:sqlserver://projetoloja.database.windows.net:1433;database=loja;user=admin42@projetoloja;password=Gabriel1!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</property>
+  <property name="hibernate.connection.username">admin42@projetoloja</property>
+  <property name="hibernate.connection.password">Gabriel1!</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.format_sql">false</property>
+  <property name="hbm2ddl.auto">update</property>
+  <!-- Enable Hibernate's automatic session context management -->
+  <property name="current_session_context_class">thread</property>
+
+  <!-- Cache de segundo nivel  -->
+  <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+  <!-- Mostra o SQL gerado -->
+  <property name="show_sql">true</property>
+
+  <!-- Cria tabelas no BD -->
+  <property name="hbm2ddl.auto">create</property>
+
+ <!-- Mapeamento das entidades -->
+ <mapping class="br.pro.api.model.ClienteModel" />
+ <mapping class="br.pro.api.model.ItemVendaModel" />
+ <mapping class="br.pro.api.model.ProdutoModel" />
+ <mapping class="br.pro.api.model.VendaModel" />
+ 
+ </session-factory>
+</hibernate-configuration>
+
+

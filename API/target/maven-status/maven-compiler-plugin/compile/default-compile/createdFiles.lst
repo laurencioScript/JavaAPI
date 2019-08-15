@@ -1,0 +1,16 @@
+br/pro/api/util/ApiRosourceConfig.class
+br/pro/api/dao/ItemVendaDao.class
+br/pro/api/dao/ClienteDao.class
+br/pro/api/dao/VendaDao.class
+br/pro/api/model/ProdutoModel.class
+br/pro/api/model/ClienteModel.class
+br/pro/api/model/ItemVendaModel.class
+br/pro/api/util/HibernateUtil.class
+br/pro/api/dao/ProdutoDao.class
+br/pro/api/model/GenericModel.class
+br/pro/api/dao/GenericDao.class
+br/pro/api/service/VendaService.class
+br/pro/api/service/ProdutoService.class
+br/pro/api/service/ClienteService.class
+br/pro/api/model/VendaModel.class
+br/pro/api/service/ItemVendaService.class
